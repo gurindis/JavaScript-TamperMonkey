@@ -1,8 +1,32 @@
 # JavaScript-TamperMonkey
-**Summary:** This tampermonkey script (600+ lines of code) runs on a website and adds multiple features to the website:  
+**Summary:** TamperMonkey (TM) is a web browser extension publicly available on FireFox, Chrome, & MS Edge. It's used by Amazon employees to enhance certain websites. Amazon employees voluntarily code & develop TM scripts for process improvement.  
+
+While working at Amazon, I recognized a business problem/bottleneck and independently learned/developed a TM script. I could not have been prouder of this accomplishment!
+
+This tampermonkey script (600+ lines of code) runs on a website and adds multiple features to the website:  
 1-Metrics display  
 2-Sort button  
 3-Sort dropdown list
+
+**Business Problem**
+Can you imagine you are a dispatcher monitoring on the road (OTR) performance of 30+ delivery drivers (or you are an Amazon Manager monitoring 250+ routes) but you don't know how the drivers/routes are performing? 
+Specifically:
+1-You don't know if they are going to finish delivering their route in the allocated time given to them- which is 10 hours. 
+2-You don't know the productivity metric of each driver- (DPPH- Delivery Per Paid Hour)
+3-You don't know how much a driver is ahead/behind (Shift Completed % vs. Stops Completed %)
+4-You don't know how much help to send a driver (OODT- Out of Drive Time Stops)
+5- To get all of these metrics, you have to calculate them manually!!!
+6- You can't sort your drivers in ascending/descending order based on the metrics above- DPPH, OODT, Stops Completed %.
+
+**Financial Impact**- Amazon pays a fixed rate for 10 hours per standard parcel route to delivery companies- Delivery Service Providers(DSPs). Ff the drivers do not finish their route in 10 hours they go into overtime. Overtime pay comes out of a DSP's pocket, as Amazon only pays a fixed rate for 10 hours. Thus, it's critical to have access to the right data instantaneously to make the correct business decisions.
+
+**Customer Impact** If your Amazon package was showing out for delivery, but you find out in the evening that it was not delivered, how would you feel?
+
+**Internal Metrics Impacted** 
+Several internal metrics are impacted by packages that are not delivered for the day.
+
+**DSP Metrics Impacted** 
+- Delivery Completion Rate- DCR %. Undelivered packages lower DCR.
 
 **Details**  
 1-The following metrics are displayed for each route once the website loads: Stops Completed %, Shift Completed %, DPPH, OODT Stops  
@@ -45,3 +69,5 @@
 >
 >when the user returns to the homepage
 
+**Future Product Ideas:**  
+1- Daily Report- Give stakeholders an ability to store/download all the data into excel format- Driver Name, Route ID, DPPH, DSP Name.

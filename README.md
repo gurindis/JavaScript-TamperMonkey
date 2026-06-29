@@ -13,6 +13,7 @@ This tampermonkey script (600+ lines of code) runs on a website and adds multipl
 Can you imagine you are a dispatcher monitoring on the road (OTR) performance of 30+ delivery drivers (or you are an Amazon Manager monitoring 250+ routes) but you don't know how the drivers/routes are performing? 
 
 Specifically:
+
 1-You don't know if they are going to finish delivering their route in the allocated time given to them- which is 10 hours 
 
 2-You don't know the productivity metric of each driver- (DPPH- Delivery Per Paid Hour)
